@@ -1,3 +1,8 @@
+#prodotti {
+    color: #c2185b;
+    text-align: center;
+}
+
 #contenitoreGenerale {
     height: fit-content;
     display: flex;
