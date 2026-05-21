@@ -1,0 +1,266 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html, body {
+  height: 100%;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+ 
+main {
+  flex: 1;
+}
+ 
+/* ===== HEADER ===== */
+#header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+#logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #c2185b;
+  letter-spacing: 1px;
+}
+ 
+#menu a {
+  text-decoration: none;
+  color: #555;
+  margin-left: 24px;
+  font-size: 0.95rem;
+}
+ 
+#menu a:hover {
+  color: #c2185b;
+}
+ 
+/* ===== BANNER PRINCIPALE ===== */
+#banner {
+  background-color: #fce4ec;
+  padding: 80px 40px;
+  text-align: center;
+}
+ 
+#banner-contenuto h1 {
+  font-size: 3rem;
+  color: #880e4f;
+  margin-bottom: 16px;
+}
+ 
+#banner-contenuto p {
+  font-size: 1.15rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+ 
+.btn-banner {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: #c2185b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+ 
+.btn-banner:hover {
+  background-color: #880e4f;
+}
+ 
+/* ===== SEZIONE CATEGORIE ===== */
+#categorie {
+  padding: 60px 40px;
+  text-align: center;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+#categorie h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 36px;
+}
+ 
+#griglia-categorie {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+ 
+.card-categoria {
+  background-color: #fff;
+  border: 3px solid #3f3232;
+  border-radius: 20px;
+  padding: 30px 24px;
+  width: 200px;
+  text-align: center;
+}
+ 
+.card-categoria:hover {
+  border-color: #ec0c66;
+  transform: scale(1.2);
+  
+}
+ 
+.card-icona {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+ 
+.card-categoria h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+ 
+.card-categoria p {
+  font-size: 0.85rem;
+  color: #888;
+  line-height: 1.5;
+}
+ 
+/* ===== BANNER SECONDARIO ===== */
+#banner-secondario {
+  background-color: #f8bbd0;
+  padding: 60px 40px;
+  text-align: center;
+}
+ 
+#banner-secondario h2 {
+  font-size: 1.8rem;
+  color: #880e4f;
+  margin-bottom: 12px;
+}
+ 
+#banner-secondario p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+ 
+.btn-secondario {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #880e4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+ 
+.btn-secondario:hover {
+  background-color: #c2185b;
+}
+ 
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+ 
+  #header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+ 
+  #menu a {
+    margin: 0 10px;
+  }
+ 
+  #banner {
+    padding: 50px 20px;
+  }
+ 
+  #banner-contenuto h1 {
+    font-size: 2rem;
+  }
+ 
+  #categorie {
+    padding: 40px 20px;
+  }
+ 
+  .card-categoria {
+    width: 100%;
+  }
+ 
+  #banner-secondario {
+    padding: 40px 20px;
+  }
+}
+ 
+ 
+/* ===== FOOTER ===== */
+#footer {
+  background-color: #880e4f;
+  color: #fff;
+  padding: 40px 40px 0;
+}
+ 
+#footer-contenuto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #a0306a;
+}
+ 
+.footer-colonna h4 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #f8bbd0;
+}
+ 
+.footer-colonna p {
+  font-size: 0.9rem;
+  color: #e0b0c0;
+  line-height: 1.8;
+}
+ 
+.footer-colonna a {
+  display: block;
+  text-decoration: none;
+  color: #e0b0c0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+ 
+.footer-colonna a:hover {
+  color: #fff;
+}
+ 
+#footer-bottom {
+  text-align: center;
+  padding: 16px 0;
+  font-size: 0.85rem;
+  color: #e0b0c0;
+}
+ 
+@media (max-width: 600px) {
+  #footer {
+    padding: 30px 20px 0;
+  }
+ 
+  #footer-contenuto {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
